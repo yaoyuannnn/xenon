@@ -75,7 +75,7 @@ class XenonInterpreter():
 
   def generate_outputs(self):
     all_generated_files = []
-    for sweep in self.configured_sweeps.itervalues():
+    for sweep in self.configured_sweeps.values():
       generated_files = sweep.generateAllOutputs()
       all_generated_files.extend(generated_files)
     return all_generated_files
